@@ -1,0 +1,96 @@
+* { box-sizing: content-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #1f2937;
+  background: #f4f6fb;
+}
+
+.site-header {
+  padding: 35px 20px;
+  text-align: center;
+  color: white;
+  background: #243b80;
+}
+.site-header h1 { margin: 0 0 5px; font-size: 32px; }
+.site-header p { margin: 0; color: #e2e8ff; }
+
+.container { width: min(1100px, calc(100% - 36px)); margin: 30px auto; }
+
+.intro, .demo-section, .note {
+  margin-bottom: 25px;
+  padding: 24px;
+  background: white;
+  border: 1px solid #dfe4ee;
+  border-radius: 12px;
+}
+
+h2 { margin-top: 0; color: #243b80; }
+.section-description { color: #64748b; }
+
+.box-grid, .height-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  align-items: start;
+}
+
+.demo-card {
+  min-width: 0;
+  padding: 16px;
+  background: #f8faff;
+  border: 1px solid #dce4f5;
+  border-radius: 10px;
+}
+.demo-card h3 { margin-top: 0; font-size: 17px; }
+.demo-card p { margin: 8px 0 0; font-size: 14px; }
+
+/* Same 200px content width; padding and border values differ. */
+.demo-box {
+  width: 200px;
+  min-height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  color: #172554;
+  background: #dbeafe;
+}
+.box-one { padding: 10px; border: 2px solid #2563eb; }
+.box-two { padding: 25px; border: 5px solid #0f766e; }
+.box-three { padding: 40px; border: 8px solid #c2410c; }
+
+.height-box {
+  width: 180px;
+  padding: 10px;
+  border: 3px solid #6d28d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #3b0764;
+  background: #ede9fe;
+  font-weight: bold;
+}
+.height-small { height: 60px; }
+.height-medium { height: 120px; }
+.height-large { height: 180px; }
+
+.note li { margin-bottom: 8px; }
+code { padding: 2px 5px; color: #9f1239; background: #fff1f2; border-radius: 4px; }
+
+footer {
+  padding: 18px;
+  text-align: center;
+  color: #64748b;
+  background: white;
+  border-top: 1px solid #dfe4ee;
+}
+
+@media (max-width: 800px) {
+  .box-grid, .height-grid { grid-template-columns: 1fr; }
+  .demo-box, .height-box { max-width: calc(100% - 100px); }
+}

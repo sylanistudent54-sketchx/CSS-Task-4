@@ -1,0 +1,40 @@
+CSS TASK 4 — BOX MODEL
+======================
+
+Assignment Topic:
+CSS Box Model — Padding, Border, Content Width and Height
+
+OBJECTIVE
+The objective is to understand the CSS Box Model and observe how different padding,
+border, width, and height values affect an element.
+
+WHAT I CREATED
+I created a webpage with two demonstrations.
+
+1. Different Padding and Border Values
+- Three boxes use the same content width of 200px.
+- Box 1 uses 10px padding and a 2px border.
+- Box 2 uses 25px padding and a 5px border.
+- Box 3 uses 40px padding and an 8px border.
+
+2. Different Height Values
+- Three boxes use content heights of 60px, 120px, and 180px.
+- Their width, padding, and border values remain the same.
+
+OBSERVATIONS
+1. Padding adds space between the content and the border.
+2. Increasing padding makes the total box larger when content-box sizing is used.
+3. A thicker border increases the total outside dimensions of the box.
+4. Increasing content height makes the box taller.
+5. The default box-sizing value is content-box. The declared width and height apply
+   to the content area, while padding and border are added outside it.
+
+CONCLUSION
+This assignment helped me understand how padding, border, content width, and height
+work together in the CSS Box Model. By changing the values, I observed how the total
+size and appearance of each box changed.
+
+FILES INCLUDED
+- index.html: webpage structure and box examples
+- style.css: styling and different Box Model values
+- Documentation.txt: written explanation and observations

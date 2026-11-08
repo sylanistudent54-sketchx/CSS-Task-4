@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Task 4 - Box Model</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>CSS Box Model</h1>
+    <p>CSS Task 4 — Padding, Border, Content Width and Height</p>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h2>Understanding the Box Model</h2>
+      <p>Every HTML element is displayed as a rectangular box. The CSS Box Model consists of content, padding, border, and margin.</p>
+    </section>
+
+    <section class="demo-section">
+      <h2>1. Different Padding and Border Values</h2>
+      <p class="section-description">The content width is kept at 200px. Padding and border values are changed to observe the total box size.</p>
+      <div class="box-grid">
+        <article class="demo-card">
+          <h3>Box 1 — Small Values</h3>
+          <div class="demo-box box-one">Content<br>200px wide</div>
+          <p><strong>Padding:</strong> 10px</p><p><strong>Border:</strong> 2px solid</p>
+        </article>
+        <article class="demo-card">
+          <h3>Box 2 — Medium Values</h3>
+          <div class="demo-box box-two">Content<br>200px wide</div>
+          <p><strong>Padding:</strong> 25px</p><p><strong>Border:</strong> 5px solid</p>
+        </article>
+        <article class="demo-card">
+          <h3>Box 3 — Large Values</h3>
+          <div class="demo-box box-three">Content<br>200px wide</div>
+          <p><strong>Padding:</strong> 40px</p><p><strong>Border:</strong> 8px solid</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="demo-section">
+      <h2>2. Different Height Values</h2>
+      <p class="section-description">The width, padding, and border remain the same. Only the content height changes.</p>
+      <div class="height-grid">
+        <article class="demo-card"><h3>Short Box</h3><div class="height-box height-small">Height: 60px</div></article>
+        <article class="demo-card"><h3>Medium Box</h3><div class="height-box height-medium">Height: 120px</div></article>
+        <article class="demo-card"><h3>Tall Box</h3><div class="height-box height-large">Height: 180px</div></article>
+      </div>
+    </section>
+
+    <section class="note">
+      <h2>What I Observed</h2>
+      <ul>
+        <li>Increasing padding creates more space between the content and the border.</li>
+        <li>Increasing border width makes the border thicker and increases the total size of the box.</li>
+        <li>Increasing content width or height changes the dimensions of the content area.</li>
+        <li>The default <code>box-sizing: content-box</code> means padding and border are added outside the declared content width and height.</li>
+      </ul>
+    </section>
+  </main>
+  <footer><p>CSS Task 4 — Box Model Demonstration</p></footer>
+</body>
+</html>
